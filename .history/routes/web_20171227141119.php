@@ -45,5 +45,5 @@
 
 
 //}); 
-Route::get('/post/{id}', 'Postscontroller@index');
+Route::get('/poste', 'Postscontroller@index');
 

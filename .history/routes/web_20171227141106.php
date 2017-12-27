@@ -41,9 +41,10 @@
 //     return "this url is ". $url;
 
 // }));
-//Route::group(['middleware' => ['web']], function () {
+
+Route::get('/poste', 'Postscontroller@index');
+
+Route::group(['middleware' => ['web']], function () {
 
 
-//}); 
-Route::get('/post/{id}', 'Postscontroller@index');
-
+}); 
