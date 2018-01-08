@@ -43,19 +43,15 @@
 // }));
 //Route::get('/post/{id}', 'Postscontroller@index');
 
-//Route::resource('/posts', 'Postscontroller');
+Route::resource('/posts', 'Postscontroller');
 
-Route::get('/contact', 'Postscontroller@contact'); 
+//Route::resource('/contact'); 
 
-Route::get('post/{id}/{name}/{passeword}', 'Postscontroller@show_post'); 
+  Route::get('/contact', function () {
 
-//Route::get('post/{id}', 'Postscontroller@show_post'); 
+     return view('contact');
 
-//   Route::get('/contact', function () {
-
-//      return view('contact');
-
-//   });
+  });
 
 
 

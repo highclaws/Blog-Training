@@ -41,25 +41,10 @@
 //     return "this url is ". $url;
 
 // }));
-//Route::get('/post/{id}', 'Postscontroller@index');
 
-//Route::resource('/posts', 'Postscontroller');
+// Route::get('/post/{id}', 'Postscontroller@index');
 
-Route::get('/contact', 'Postscontroller@contact'); 
-
-Route::get('post/{id}/{name}/{passeword}', 'Postscontroller@show_post'); 
-
-//Route::get('post/{id}', 'Postscontroller@show_post'); 
-
-//   Route::get('/contact', function () {
-
-//      return view('contact');
-
-//   });
-
-
-
-
+Route::resource('posts', 'Postscontroller');
 
 
 // application route
@@ -68,4 +53,3 @@ Route::group(['middleware' => ['web']], function () {
 
 
 }); 
-

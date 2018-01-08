@@ -43,13 +43,9 @@
 // }));
 //Route::get('/post/{id}', 'Postscontroller@index');
 
-//Route::resource('/posts', 'Postscontroller');
+Route::resource('/posts', 'Postscontroller');
 
-Route::get('/contact', 'Postscontroller@contact'); 
-
-Route::get('post/{id}/{name}/{passeword}', 'Postscontroller@show_post'); 
-
-//Route::get('post/{id}', 'Postscontroller@show_post'); 
+Route::resource('/contact','Postscontroller'); 
 
 //   Route::get('/contact', function () {
 

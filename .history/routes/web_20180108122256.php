@@ -47,9 +47,7 @@
 
 Route::get('/contact', 'Postscontroller@contact'); 
 
-Route::get('post/{id}/{name}/{passeword}', 'Postscontroller@show_post'); 
-
-//Route::get('post/{id}', 'Postscontroller@show_post'); 
+Route::get('post/{$id}', 'Postscontroller@show_post');
 
 //   Route::get('/contact', function () {
 

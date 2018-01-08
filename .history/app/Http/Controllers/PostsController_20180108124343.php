@@ -103,7 +103,7 @@ class PostsController extends Controller
     {
         //
         //return view('post')->with('id',$id);
-        return view('post', compact('id','name','password'));
+        return view('post', compact($id));
     }
 
 }

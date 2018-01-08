@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-use App\Http\Controllers\Controller;
+
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\View;
 
@@ -92,18 +92,12 @@ class PostsController extends Controller
 
     }
 
-    protected function contact()
+
+    public function contact()
     {
         //
-        return view( "contact");
+        return "I am the methode destroy stuff";
 
-    }
-
-    public function show_post($id, $name, $password)
-    {
-        //
-        //return view('post')->with('id',$id);
-        return view('post', compact('id','name','password'));
     }
 
 }

@@ -99,11 +99,11 @@ class PostsController extends Controller
 
     }
 
-    public function show_post($id, $name, $password)
+    public function show_post($id)
     {
         //
-        //return view('post')->with('id',$id);
-        return view('post', compact('id','name','password'));
+        return view('post')->with('id',$id);
+        //return view('post', compact($id));
     }
 
 }
